@@ -1,0 +1,238 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-01T19:05:45.903Z",
+        "line": 13,
+        "name": "Valid bill amount",
+        "description": "",
+        "id": "calculate-tip-and-total-amounts;valid-bill-amount;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24623759065,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the tip percentage is \"0.001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0.001\"",
+                  "offset": 22
+                }
+              ],
+              "location": "MainScreenSteps.theTipPercentageIs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5811490245,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set \"9999\" in Bill Amount",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9999\"",
+                  "offset": 6
+                }
+              ],
+              "location": "MainScreenSteps.iSetInBillAmount(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 639304686,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see tip amount equals \"$0.10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$0.10\"",
+                  "offset": 31
+                }
+              ],
+              "location": "MainScreenSteps.iShouldSeeTipAmountEquals(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 86841269,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the total amount should be \"$9999.10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$9999.10\"",
+                  "offset": 27
+                }
+              ],
+              "location": "MainScreenSteps.andTotalAmountShouldBe(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Automation"
+          },
+          {
+            "name": "@MainScreen"
+          },
+          {
+            "name": "@CalculationOfAmounts"
+          }
+        ]
+      }
+    ],
+    "name": "Calculate tip and total amounts",
+    "description": "  Calculate amounts in the main screen based on bill amount",
+    "id": "calculate-tip-and-total-amounts",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/main_screen/test_cases/AmountsCalculation.feature",
+    "tags": [
+      {
+        "name": "@Automation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@MainScreen",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@CalculationOfAmounts",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 25
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-01T19:06:17.069Z",
+        "line": 12,
+        "name": "Valid data in tip settings",
+        "description": "",
+        "id": "update-tip-settings;valid-data-in-tip-settings;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11201042088,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accessed the tip settings page",
+            "match": {
+              "location": "TipSettingsSteps.iAccessedTheTipSettingsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14106044555,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I set \"10.0001\" in Tip Percentage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10.0001\"",
+                  "offset": 6
+                }
+              ],
+              "location": "TipSettingsSteps.iSetInTipPercentage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70330725,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see the tip percentage \"10.0001%\" in the Main Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10.0001%\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TipSettingsSteps.iShouldSeeTheTipPercentage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Automation"
+          },
+          {
+            "name": "@TipSettings"
+          },
+          {
+            "name": "@TipSettingsUpdate"
+          }
+        ]
+      }
+    ],
+    "name": "Update tip settings",
+    "description": "  Replace data in tip settings",
+    "id": "update-tip-settings",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/tip_settings/test_cases/TipSettingsUpdate.feature",
+    "tags": [
+      {
+        "name": "@Automation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@TipSettings",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@TipSettingsUpdate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 26
+        }
+      }
+    ]
+  }
+]
