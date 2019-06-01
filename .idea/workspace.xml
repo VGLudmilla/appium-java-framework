@@ -202,7 +202,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559415938869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559416010900" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -422,7 +422,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" x="513" y="98" width="340" height="611" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.22239032" />
+      <window_info content_ui="combo" x="513" y="98" width="340" height="611" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.25718608" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -431,7 +431,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3371522" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3371522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
