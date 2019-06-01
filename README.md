@@ -1,10 +1,6 @@
 # Appium Java Framework
 > A test automation framework for Android apps.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 The purpose of this project is to demonstrate how to automate app tests using Java, Appium, Cucumber and the approach of Page Object Model.
 
 ## Requirements
@@ -23,7 +19,6 @@ The purpose of this project is to demonstrate how to automate app tests using Ja
 
 ## Project Structure
 
-Once you open the project in your IDE, you will see the following structure:
 ```
 appium_java_framework
 	app_under_testing
@@ -44,17 +39,17 @@ appium_java_framework
 	target
 ```
 
-The _app_under_testing_ folder contains the apk under testing. However, it is possible that the job manager, e.g. Jenkins, edit the properties setting the location of the app.
+* The _app_under_testing_ folder contains the apk under testing. However, it is possible that the job manager, e.g. Jenkins, edit the properties setting the location of the app.
 So you do not need to commit any change in your suite for being able to run the tests in a new version of the app. Also, you have the advantage of getting this data automatically by putting the automation in the pipeline of software development.
 
-The _properties_ folder contains files with settings about the app and the device in your environment. You must edit these files and replace the asked information according to the environment you have.
+* The _properties_ folder contains files with settings about the app and the device in your environment. You must edit these files and replace the asked information according to the environment you have.
 
-The _src.test.java_ contains packages for the modules of the app under testing.
-	_general_ package contains classes for generic purposes.
-	_AmountCalculation.feature_ is the test cases itself. Each step calls a method of MainScreenSteps. Cucumber does this magic.
-	_MainScreenSteps_ contains the implementation for interacting with the Page Objects in order to test what the test case says. This class does not need to bother about the driver because its father Step.java has the driver.
-	_MainPageObjects_ is an object repository for the user interface elements of that specific interface. It imports the page factories linking elements to variables and provides methods for interacting with the elements.
-	_target_ folder contains the reports of test execution.
+* The _src.test.java_ contains packages for the modules of the app under testing.
+	* _general_ package contains classes for generic purposes.
+	* _AmountCalculation.feature_ is the test cases itself. Each step calls a method of MainScreenSteps. Cucumber does this magic.
+	* _MainScreenSteps_ contains the implementation for interacting with the Page Objects in order to test what the test case says. This class does not need to bother about the driver because its father Step.java has the driver.
+	* _MainPageObjects_ is an object repository for the user interface elements of that specific interface. It imports the page factories linking elements to variables and provides methods for interacting with the elements.
+	* _target_ folder contains the reports of test execution.
 
 Automation.java is the class I use for running the automation via maven (mvn test). The task calls this executor class which then calls the test cases by tag.
 The class calls all of the test cases that contain the tag setted, e.g. @Automation.
@@ -84,15 +79,8 @@ Jonatas Kirsch – [Linkedin](https://linkedin.com/in/jonataskirsch)
 
 ## Contributing
 
-1. Fork it (<https://github.com/jonataskirsch/appium_java_framework/fork>)
+1. Fork it (<https://github.com/jonatask/appium-java-framework/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
