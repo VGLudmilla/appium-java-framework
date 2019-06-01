@@ -50,7 +50,7 @@ So you do not need to commit any change in your suite for being able to run the 
 	* _MainScreenSteps_ contains the implementation for interacting with the Page Objects in order to test what the test case says. This class does not need to bother about the driver because its father Step.java has the driver.
 	* _MainPageObjects_ is an object repository for the user interface elements of that specific interface. It imports the page factories linking elements to variables and provides methods for interacting with the elements.
 	* _target_ folder contains the reports of test execution.
-* Automation.java is the class used for running the automation via maven (mvn test). The task calls this executor class which then calls the test cases by tag. The class calls all of the test cases that contain the tag setted, e.g. @Automation.
+* _Automation.java_ is the class used for running the automation via maven (mvn test). The task calls this executor class which then calls the test cases by tag. The class calls all of the test cases that contain the tag setted, e.g. @Automation.
 
 ## Test setup
 
