@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-06-01T19:05:45.903Z",
+        "start_timestamp": "2019-06-02T19:24:51.929Z",
         "line": 13,
         "name": "Valid bill amount",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24623759065,
+              "duration": 29331211183,
               "status": "passed"
             },
             "line": 6,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 5811490245,
+              "duration": 5928288260,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 639304686,
+              "duration": 653417144,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 86841269,
+              "duration": 101883642,
               "status": "passed"
             },
             "line": 9,
@@ -133,7 +133,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-06-01T19:06:17.069Z",
+        "start_timestamp": "2019-06-02T19:25:27.947Z",
         "line": 12,
         "name": "Valid data in tip settings",
         "description": "",
@@ -143,7 +143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11201042088,
+              "duration": 11973514206,
               "status": "passed"
             },
             "line": 6,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 14106044555,
+              "duration": 14081340186,
               "status": "passed"
             },
             "line": 7,
@@ -173,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 70330725,
+              "duration": 60709572,
               "status": "passed"
             },
             "line": 8,
