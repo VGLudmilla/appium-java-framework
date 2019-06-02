@@ -64,11 +64,12 @@ public class Setup {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         String appPath = getProperty("app", "path");
+        String deviceName = getProperty("device", "name");
         String newCommandTimeout = getProperty("app", "new_command_timeout");
 
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, newCommandTimeout);
         capabilities.setCapability(MobileCapabilityType.APP, new File(appPath).getAbsolutePath());
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 
         return capabilities;
